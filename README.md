@@ -62,7 +62,13 @@ Tomcat manager at http://localhost:8080/manager
 
 At this point if you bring up a browser and point it at http://localhost:8090 you should see the Jenkins Main Screeen.
 The first thing we need to do is build the hello-world warfile and install it in Tomcat.  Go ahead and Click on the *hello-world* listed under Name in the middle of the screen.
-Click on *Build Now* in the Left Column, this will build the warfile and install it. Assuming it went ok (you do have a Blue Ball and not a Red one, right?
+Click on *Build Now* in the Left Column, this will build the warfile and install it. Assuming it went ok (you do have a Blue Ball and not a Red one, right?  Click on http://localhost:8080 and you should see:
+```
+It works !
+
+Click here to see the hello-world example
+```
+
 ####Links to Tools Used
 * Jenkins https://jenkins-ci.org
 * git https://git-scm.org
