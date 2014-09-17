@@ -1,7 +1,6 @@
 ##Materials for MABUG 2014 Presentation
 
-* Title: Automated Build and Deployment of Tomcat Apps
-* ~~or, How Ops can get out of the way of development~~
+###Title: Automated Build and Deployment of Tomcat Apps, ~~or, How Ops can get out of the way of development~~
 
 * Chris Peck
 * College of William and Mary
