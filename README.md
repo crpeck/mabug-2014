@@ -35,9 +35,10 @@ I also created a real simple sourcetree that prints out *hello world* and get's 
 ####Links to Tools Used
 * Jenkins https://jenkins-ci.org
 * git https://git-scm.org
-* Vagrant https://www.vagrantup.com
+* Vagrant https://www.vagrantup.com 
 * VirtualBox https://www.virtualbox.org
-* Puppet: http://puppetlabs.com
+* Puppet: http://puppetlabs.com Configuration Management
+* Packer http://www.packer.io/ We use it to build our VM images
 
 ####Links to Other Great Stuff
 * U.S. Digital Services Playbook https://playbook.cio.gov/
