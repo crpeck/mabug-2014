@@ -25,10 +25,12 @@ For the Production Environment, since Ops are the only ones allowed to deploy to
 Since the process is automated, the chance of failure is minimized. Developers are happy, and, Ops are ecstatic.
 
 
-####Demostration
+####Demonstration
 During the creation of this presentation, I created a "Vagrantfile" for demonstrating how this is done. This Vagrantfile will spin up an Ubuntu 14.04 server VM running Tomcat and Jenkins. It also installs a simple source tree using git to use as an example. This git source tree contains a post-commit hook into Jenkins to kick off the building of a warfile based on it, and, then auto-reploying it to the Tomcat server.
 
 If you would like to use this Vagrantfile to play with, head on over to https://github.com/crpeck/vagrant-mabug and *git* it.
+
+I also created a real simple sourcetree that prints out *hello world* and get's installed into /usr/local/src/hello-world on the Vagrantbox VM. This is the source tree mentioned above, it's located at https://github.com/crpeck/hello-world
 
 ####Links to Tools Used
 * Jenkins https://jenkins-ci.org
@@ -37,9 +39,16 @@ If you would like to use this Vagrantfile to play with, head on over to https://
 * VirtualBox https://www.virtualbox.org
 * Puppet: http://puppetlabs.com
 
-####Links to Other Ggreat Stuff
-##### DevOps
-* http://devops.com
-* http://http://flowcon.org/
-* http://velocityconf.com/
+####Links to Other Great Stuff
+* U.S. Digital Services Playbook https://playbook.cio.gov/
+* DevOps http://devops.com
+* FlowCon Conference http://http://flowcon.org/
+* O'Reilly Conference http://velocityconf.com/
+* IT Revolution Press http://itrevolution.com/
 
+####Written Material aka Books
+* The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win, Gene Kim, Kevin Behr, George Spafford
+* Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation, Jez Humble and David Farley
+
+####Links to Ellucian Sites
+* Demo of Using Ellucian's git repo http://udca.sungardhe.com/cps/WBT/XE_Webinars/using_git_repos_screencast.mov
