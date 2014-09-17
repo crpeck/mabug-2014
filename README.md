@@ -32,6 +32,37 @@ If you would like to use this Vagrantfile to play with, head on over to https://
 
 I also created a real simple sourcetree that prints out *hello world* and get's installed into /usr/local/src/hello-world on the Vagrantbox VM. This is the source tree mentioned above, it's located at https://github.com/crpeck/hello-world
 
+####Running the Demonstration
+Running through this assumes the following:
+* You've installed VirtualBox
+* You've installed Vagrant
+* You've installed git
+Once you have those requirements out of the way, here's a quick walk through.
+```
+Open a terminal window
+mkdir mabugdemo
+cd mabugdemo
+git clone https://github.com/crpeck/vagrant-mabug.git
+cd vagrant-mabug
+vagrant up
+
+Assuming all went as planned, you should see this as Vagrant brings up the machine - before the "Provisioning" section:
+    default: Adapter 1: nat
+==> default: Forwarding ports...
+    default: 8080 => 8080 (adapter 1)
+    default: 8090 => 8090 (adapter 1)
+    default: 22 => NNNN (adapter 1) (this doesn't matter)
+
+and, this at the end:
+
+Jenkins is available at http://localhost:8090
+Tomcat manager at http://localhost:8080/manager
+  user=manager, password=12345
+```
+
+At this point if you bring up a browser and point it at http://localhost:8090 you should see the Jenkins Main Screeen.
+The first thing we need to do is build the hello-world warfile and install it in Tomcat.  Go ahead and Click on the *hello-world* listed under Name in the middle of the screen.
+Click on *Build Now* in the Left Column, this will build the warfile and install it. Assuming it went ok (you do have a Blue Ball and not a Red one, right?
 ####Links to Tools Used
 * Jenkins https://jenkins-ci.org
 * git https://git-scm.org
