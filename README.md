@@ -75,9 +75,8 @@ To test that the post commit hook from git to Jenkins is working, you will need 
 ```
 vagrant ssh
 cd /usr/local/src/hello-world/webapp
-vi index.jsp
+pico index.jsp
 change Hello World to something else
-:wq
 git commit -am 'changed output to something else'
 ```
 At this point the Jenkins page should show a Build Job kicking off for the hello-world project (bottom of the left column).  Note that you can display the console output of the build process by clicking on the Job and selecting Console Output. Once it's finished, if you refresh the Hello World browser window it should display the *something else* you entered above.
